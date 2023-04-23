@@ -1,0 +1,321 @@
+html, body {
+    width: auto;
+    margin: 0px 80px 0px 80px;
+}
+
+.nav {
+    background-color: black;
+    color: white;
+    width: auto;
+    height: 50px;
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+    top: -10px;
+    border: 2px solid brown;
+}
+
+.fashion {
+    font-size: 35px;
+    margin-top: 5px;
+    position: relative;
+    left: 15px;
+}
+
+.cart {
+    width: 25px;
+    height: 40px;
+    margin-top: -11px;
+    transition: 0.1s;
+    cursor: pointer;
+    position: relative;
+    left: 5px;
+}
+.searchlogo {
+    width: 20px;
+    height: 20px;
+}
+
+
+.cart:hover {
+    width: 30px;
+    height: 30px;
+    border: 3px solid brown;
+    border-radius: 50%;
+    
+}
+
+
+.searchfield {
+    position: relative;
+    top: -6px;
+    font-size: 15px;
+}
+.bodybox {
+    width: auto;
+    height: 190px;
+    background-color: whitesmoke;
+    border: 2px solid black;
+    box-sizing: border-box;
+    font-size: 60px;
+    padding-left: 40px;
+    padding-right: 60px;
+    text-align: center;
+    margin-bottom: 7px;
+    position: relative;
+    top: -75px;
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+}
+.bodybox .clothlink:hover + .img{
+    position: relative;
+    left: -80px;
+
+}
+
+.bodybox:hover {
+    box-shadow: 3px 3px 15px  black;
+}
+
+.bodybox .img {
+    border-radius: 50%;
+    border: 4px solid black;
+    width: 20%;
+    position: relative;
+}
+
+.bodytext:hover {
+    position: relative;
+    top: -5px;
+    color: brown;
+    font-weight: bolder;
+    transform: scale(1.1);
+} 
+
+
+.footer {
+    width: auto;
+    height: 40px;
+    background-color: black;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 25px;
+    margin-top: -70px;
+}
+
+.footerlogo {
+    color: antiquewhite;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.footerlogo:hover{
+    font-size: 25px;
+    border: 4px solid rgb(77, 39, 39);
+    border-radius: 50%;
+}
+.contact {
+    position: relative;
+    top: -23px;
+    font-weight: bolder;
+    color: azure;
+}
+
+.menulogo {
+    font-size: 35px;
+    position: relative;
+    top: 12px;
+    transition: 0.2s;
+    color: white;
+}
+.menulogo:hover {
+    border: 2px solid brown;
+    border-radius: 50%;
+}
+
+.navlinks {
+    text-decoration: none;
+    color: white;
+    transition: 0.3s;
+    font-size: 20px;
+
+}
+.navlinks:hover {
+    color: brown;
+    position: relative;
+    top: -5px;
+}
+
+.top {
+    position: sticky;
+    position: -webkit-sticky;
+    top: 10px;
+    z-index: 1;
+    display: block;
+}
+.menulogo2 {
+    width: auto;
+    height: 50px;
+    background-color: black;
+    position: relative;
+    top: -79px;
+    display: inline-block;
+    border-right: 1px solid white;
+    
+}
+
+.me {
+    width: 40%;
+    height: 300px;
+    background-color: black;
+    display: block;
+    position: relative;
+    top: -108px;
+    color: aliceblue;
+    left: 562px;
+    display: none;
+    z-index: 3;
+    border: 2px solid brown;
+    text-align: center;
+    line-height: 1.6;
+}
+
+.menulogo2:hover + .me {
+    display: block;
+}
+.message {
+    font-size: 35px;
+    font-weight: bolder;
+    text-decoration: underline brown;
+}
+
+marquee {
+    position: relative;
+    top: -80px;
+    font-size: 35px;
+    color: beige;
+    z-index: 1;
+}
+.home {
+    position: relative;
+    left: 30px;
+}
+.cartlink{
+    color: white;
+}
+.clothlink{
+    text-decoration: none;
+    color: black;
+}
+@media screen and (max-width : 850px) {
+    
+    .navlinks{
+        font-size: 7px;
+        position: relative;
+        left: 50px;
+    }
+    .nav {
+        width: 375px;
+        height: 40px;
+
+    }
+    html, body {
+        margin-left: 0px;
+        margin-right: -330px;
+    }
+    .bodybox{
+            height: 100px;
+            width: 375px;
+            }
+
+    .bodytext {
+        font-size: 25px;
+        padding-top: 10px;
+        position: relative;
+        left: -30px;
+    
+    }
+    .img {
+        height: 80px;
+        position: relative;
+        left: 30px;
+    }
+
+    .home {
+        position: relative;
+        left: 29px;
+        top: -7px;
+    }
+    .fashion {
+        position: relative;
+        left: 22px;
+        top: 7px;
+        font-size: 15px;
+    }
+    .cart {
+        position: relative;
+        left: 14px;
+        top: -6px;
+        width: 10px;
+        height: 8px;
+    }
+    .stores {
+        position: relative;
+        left: 4px;
+        top: -8px;
+    }
+    .contact1 {
+        left: 8px;
+        top: -8px;
+    }
+    .searchfield {
+        width: 37px;
+        height: 4px;
+        font-size: 4px;
+        top: -9px;
+    }
+    .searchlogo{
+        width: 10px;
+        height: 5px;
+        position: relative;
+        top: -8px;
+    }
+    .menulogo {
+        position: relative;
+        top: 19px;
+    }
+    .footer {
+        width: 375px;
+    }
+    .footerlogo {
+        font-size: 24px;
+        position: relative;
+        top: 7px;
+    }
+    .contact {
+        font-size: 25px;
+        position: relative;
+        top: -20px;
+        
+    }
+    * {
+        box-sizing: border-box;
+    }
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

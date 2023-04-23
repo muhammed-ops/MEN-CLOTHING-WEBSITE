@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="shoes.css">
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    
+    <title>Document</title>
+</head>
+<body>
+<div class="body1">
+    <div class="header">
+        <p>SHOES</p>
+        <p><ion-icon class='logo' name="cart-outline"></ion-icon></p>
+        <p id="inpu"></p>
+        <a href="../index.html">Home</a>
+        
+        
+    </div>
+    
+    <img class="image" src="shoes2" alt="hoodie1">
+    
+    <p>£11.78</p>
+    <p>Quantity:</p>
+    <p id="initial" style="font-weight: bolder;"></p>
+
+    
+    <button onclick="add()">+</button>
+    <button onclick="minus()">-</button>
+    <button onclick="reset()">Reset</button><br> <br>
+    <button onclick="addCart()">Add items to cart</button>
+    <p id ='cartvalue'></p>
+<div class="hoodie2">
+    <img class="image" src="shoes1" alt="hoodie1"><br>
+    <p>£15.61</p>
+    <p>Quantity:</p>
+    
+    <p id="initial1" style="font-weight:bolder ;"></p>
+    <button onclick="add1()">+</button>
+    <button onclick="minus1()">-</button>
+    <button onclick="reset1()">Reset</button><br> <br>
+    <button onclick="addCart1()">Add items to cart</button>
+    <p id ='cartvalue1'></p>
+</div>
+</div>
+    
+    <script>
+
+        let a = 0;
+        let cart = [];
+        document.getElementById('initial').innerHTML = String(a);
+        function add(){
+          a++;
+          document.getElementById('initial').innerHTML = String(a);
+      }
+      function minus(){
+          if(a>0){
+           a--;}
+          document.getElementById('initial').innerHTML = String(a);
+      }
+      function reset(){
+        a = 0;
+        document.getElementById('initial').innerHTML= String(a);
+      }
+      
+      function addCart(){
+          cart[0] = a;
+          let total = cart.reduce((a,b) => a + b);
+            console.log(total);
+            document.getElementById('inpu').innerHTML = String(total);
+          console.log(cart);
+      }
+      //
+        let b = 0;
+        document.getElementById('initial1').innerHTML = String(b);
+      function add1(){
+          b++;
+          document.getElementById('initial1').innerHTML = String(b);
+      }
+      function minus1(){
+          if(b>0){
+           b--;}
+          document.getElementById('initial1').innerHTML = String(b);
+      }
+      function reset1(){
+        b = 0;
+        document.getElementById('initial1').innerHTML= String(b);
+      }
+      
+      function addCart1(){
+          cart[1] = b;
+          let total = cart.reduce((a,b) => a + b);
+            console.log(total);
+            document.getElementById('inpu').innerHTML = String(total);
+      }
+      </script>
+</body>
+</html>
