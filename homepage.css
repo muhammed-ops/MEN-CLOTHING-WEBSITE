@@ -145,6 +145,9 @@ html, body {
     z-index: 1;
     display: block;
 }
+.menudiv {
+    height: 90px;
+}
 .menulogo2 {
     width: auto;
     height: 50px;
