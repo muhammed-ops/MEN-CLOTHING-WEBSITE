@@ -68,11 +68,7 @@ html, body {
     justify-content: space-between;
     cursor: pointer;
 }
-.bodybox .clothlink:hover + .img{
-    position: relative;
-    left: -80px;
 
-}
 
 .bodybox:hover {
     box-shadow: 3px 3px 15px  black;
@@ -83,15 +79,9 @@ html, body {
     border: 4px solid black;
     width: 20%;
     position: relative;
+    transition: 0.8s;
 }
-
-.bodytext:hover {
-    position: relative;
-    top: -5px;
-    color: brown;
-    font-weight: bolder;
-    transform: scale(1.1);
-} 
+ 
 
 
 .footer {
@@ -208,6 +198,18 @@ marquee {
 .clothlink{
     text-decoration: none;
     color: black;
+    position: relative;
+    top: 45px;
+    display: inline;
+    height: 70px;
+}
+.clothlink:hover {
+    color: brown;
+    transform: scale(1.1);
+}
+.clothlink:hover + .img {
+   position: relative;
+   left: -60px; 
 }
 @media screen and (max-width : 850px) {
     
